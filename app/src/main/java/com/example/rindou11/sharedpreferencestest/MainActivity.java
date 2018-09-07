@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("Name","Rindou");
                 editor.putInt("Age",99);
                 editor.putBoolean("Married",false);
+                editor.putString("Text",)
                 //提交数据
                 editor.apply();
 
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 pref=getSharedPreferences("data",MODE_PRIVATE);
 
-                String name=pref.getString("name",null);
+                String name=pref.getString("name","");
                 int age=pref.getInt("Age",0);
                 boolean married=pref.getBoolean("Married",false);
 
